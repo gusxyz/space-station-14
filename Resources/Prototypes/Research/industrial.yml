@@ -55,6 +55,7 @@
   cost: 10000
   recipeUnlocks:
   - FlatpackerMachineCircuitboard
+  - RCDAmmo
 
 - type: technology
   id: IndustrialEngineering
