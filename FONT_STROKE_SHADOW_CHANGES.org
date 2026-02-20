@@ -1,0 +1,11 @@
+* Font Stroke + Drop Shadow Changes
+
+- Rich text now supports:
+  - `[dropshadow]` with color + offsets.
+  - `[stroke]` with:
+    - `thickness` (float, quoted string supported, e.g. `thickness="1.5"`)
+    - `linecap` = `round|butt|square`
+    - `linejoin` = `round|bevel|miter`
+- Stroke rendering is done through SharpFont stroker which creates the glyph outlines.
+- Stroke thickness converts from pixel float to FreeType 26.6 fixed-point (`px * 64`, rounded).
+- `DropShadowTag` and `StrokeTag` are registered in engine tag manager and included in `RichTextEntry.DefaultTags`.
